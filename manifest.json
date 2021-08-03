@@ -1,0 +1,15 @@
+{
+  "name": "Infosec 101 for Activists",
+  "short_name": "Infosec 101 for Activists",
+  "start_url": "/infosec-activists-preview/",
+  "scope": "/infosec-activists-preview/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/infosec-activists-preview/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
