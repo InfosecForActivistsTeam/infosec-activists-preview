@@ -1,237 +1,30 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sitio web: https://infosecforactivists.org/
+<!doctype html><html lang=es dir=ltr><head><meta name=generator content="Hugo 0.101.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Sitio web: https://infosecforactivists.org/
 Archivo digital (PDF): https://infosecforactivists.org/Infosec_for_Activists.pdf
-Introducción América tiene una tradición muy fuerte de activismo que se remonta a las revueltas de esclavos y los levantamientos indígenas que ocurrieron antes de la fundación de los Estados Unidos. En este día, el activismo en los Estados Unidos continúa siendo una cuestión crucial. Las manifestaciones se han convertido en una herramienta esencial utilizada por los activistas para crear conciencia y lograr cambios a nivel institucional.">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Infosec 101 para Activistas" />
-<meta property="og:description" content="Sitio web: https://infosecforactivists.org/
-Archivo digital (PDF): https://infosecforactivists.org/Infosec_for_Activists.pdf
-Introducción América tiene una tradición muy fuerte de activismo que se remonta a las revueltas de esclavos y los levantamientos indígenas que ocurrieron antes de la fundación de los Estados Unidos. En este día, el activismo en los Estados Unidos continúa siendo una cuestión crucial. Las manifestaciones se han convertido en una herramienta esencial utilizada por los activistas para crear conciencia y lograr cambios a nivel institucional." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/es/" /><meta property="article:section" content="" />
-
-<meta property="article:modified_time" content="2022-06-29T19:59:06-04:00" /><meta property="og:site_name" content="Infosec para Activistas" />
-
-<title>Infosec 101 para Activistas | Infosec para Activistas</title>
-<link rel="manifest" href="../manifest.json">
-<link rel="icon" href="../favicon.png" type="image/x-icon">
-  <link rel="alternate" hreflang="en" href="../" title="Infosec 101 for Activists">
-<link rel="stylesheet" href="../book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" >
-  <script defer src="../flexsearch.min.js"></script>
-  <script defer src="../es.search.min.612e96b9f80a9c1579976d6351dc63a2efed86059a84b10788f2617f5f4aa6db.js" ></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a class="flex align-center" href="../"><span>Infosec para Activistas</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Buscar" aria-label="Buscar" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-  
-
-
-
-  
-    
-  
-
-
-  
-
-
-<ul class="book-languages">
-  <li>
-    <input type="checkbox" id="languages" class="toggle" />
-    <label for="languages" class="flex justify-between">
-      <a role="button" class="flex align-center">
-        <img src="../svg/translate.svg" class="book-icon" alt="Languages" />
-        Español
-      </a>
-    </label>
-
-    <ul>
-      
-      <li>
-        <a href="../">
-          English
-        </a>
-      </li>
-      
-    </ul>
-  </li>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="../svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>Infosec 101 para Activistas</strong>
-
-  <label for="toc-control">
-    
-    <img src="../svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#herramientos-para-usar">Herramientos para usar</a></li>
-    <li><a href="#herramientas-que-no-debe-usar">Herramientas que NO debe Usar</a></li>
-    <li><a href="#cosas-que-debe-saber">Cosas que Debe Saber</a></li>
-    <li><a href="#asistir-a-una-acción">Asistir a una acción</a>
-      <ul>
-        <li><a href="#antes">Antes</a></li>
-        <li><a href="#durante">Durante</a></li>
-        <li><a href="#después">Después</a></li>
-      </ul>
-    </li>
-    <li><a href="#preparando-su-teléfono">Preparando su teléfono</a>
-      <ul>
-        <li><a href="#migas-de-pan-digitales">Migas de Pan Digitales</a></li>
-        <li><a href="#protección-contra-intrusiones">Protección contra intrusiones</a></li>
-        <li><a href="#airdrop">AirDrop</a></li>
-        <li><a href="#copias-de-seguridad-del-teléfono">Copias de seguridad del teléfono</a></li>
-        <li><a href="#instrucciones-de-configuración-de-su-móvil">Instrucciones de configuración de su móvil</a></li>
-      </ul>
-    </li>
-    <li><a href="#ideas-de-seguridad">Ideas de Seguridad</a>
-      <ul>
-        <li><a href="#mensajería-con-encriptación">Mensajería con Encriptación</a></li>
-        <li><a href="#reunión-virtual">Reunión Virtual</a></li>
-        <li><a href="#protección-de-contraseña">Protección de contraseña</a></li>
-        <li><a href="#autenticación-de-dos-factores-a2f">Autenticación de Dos Factores (A2F)</a></li>
-        <li><a href="#contraseñas-seguras">Contraseñas Seguras</a></li>
-        <li><a href="#administrador-de-contraseñas">Administrador de contraseñas</a></li>
-        <li><a href="#preguntas-de-seguridad">Preguntas de Seguridad</a></li>
-      </ul>
-    </li>
-    <li><a href="#otras-recomendaciones">Otras Recomendaciones</a></li>
-    <li><a href="#clausura">Clausura</a>
-      <ul>
-        <li><a href="#reconocimientos">Reconocimientos</a></li>
-        <li><a href="#sobre-el-autor">Sobre el Autor</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      <h1>Infosec 101 para Activistas</h1>
-<h4>Drew Bjorn, Mark Sherman, Ph.D., y Blake Skinner</h4>
-      
-  <article class="markdown"><p>Sitio web: <a href="https://infosecforactivists.org/">https://infosecforactivists.org/</a></p>
-<p>Archivo digital (PDF): <a href="https://infosecforactivists.org/Infosec_for_Activists.pdf">https://infosecforactivists.org/Infosec_for_Activists.pdf</a></p>
-<h1 id="introducción">
-  Introducción
-  <a class="anchor" href="#introducci%c3%b3n">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<p>América tiene una tradición muy fuerte de activismo que se remonta a <a href="https://www.history.com/topics/black-history/slavery-iv-slave-rebellions#section_1">las revueltas de esclavos</a> y <a href="https://themihs.info/calusa-period/">los
+Introducción América tiene una tradición muy fuerte de activismo que se remonta a las revueltas de esclavos y los levantamientos indígenas que ocurrieron antes de la fundación de los Estados Unidos. En este día, el activismo en los Estados Unidos continúa siendo una cuestión crucial. Las manifestaciones se han convertido en una herramienta esencial utilizada por los activistas para crear conciencia y lograr cambios a nivel institucional."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Infosec 101 para Activistas"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://preview.infosecforactivists.org/es/"><meta property="og:site_name" content="Infosec para Activistas"><title>Infosec 101 para Activistas | Infosec para Activistas</title><link rel=manifest href=../manifest.json><link rel=icon href=../favicon.png type=image/x-icon><link rel=alternate hreflang=en href=https://preview.infosecforactivists.org/ title="Infosec 101 for Activists"><link rel=stylesheet href=../book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css integrity="sha256-qC1+d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin=anonymous><script defer src=../flexsearch.min.js></script>
+<script defer src=../es.search.min.528b08d0e40403e81a703c5e0b8d5811a01add4bc0bb1349552c0dc98f3154d1.js integrity="sha256-UosI0OQEA+gacDxeC41YEaAa3UvAuxNJVSwNyY8xVNE=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://preview.infosecforactivists.org/es/index.xml title="Infosec para Activistas"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=../es/><span>Infosec para Activistas</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Buscar aria-label=Buscar maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=../svg/translate.svg class=book-icon alt=Languages>
+Español</a></label><ul><li><a href=https://preview.infosecforactivists.org/>English</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=../svg/menu.svg class=book-icon alt=Menu></label>
+<strong>Infosec 101 para Activistas</strong>
+<label for=toc-control><img src=../svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#introducción>Introducción</a></li><li><a href=#herramientos-para-usar>Herramientos para usar</a></li><li><a href=#herramientas-que-no-debe-usar>Herramientas que NO debe Usar</a></li><li><a href=#cosas-que-debe-saber>Cosas que Debe Saber</a></li><li><a href=#asistir-a-una-acción>Asistir a una acción</a><ul><li><a href=#antes>Antes</a></li><li><a href=#durante>Durante</a></li><li><a href=#después>Después</a></li></ul></li><li><a href=#preparando-su-teléfono>Preparando su teléfono</a><ul><li><a href=#migas-de-pan-digitales>Migas de Pan Digitales</a></li><li><a href=#protección-contra-intrusiones>Protección contra intrusiones</a></li><li><a href=#airdrop>AirDrop</a></li><li><a href=#copias-de-seguridad-del-teléfono>Copias de seguridad del teléfono</a></li><li><a href=#instrucciones-de-configuración-de-su-móvil>Instrucciones de configuración de su móvil</a></li></ul></li><li><a href=#ideas-de-seguridad>Ideas de Seguridad</a><ul><li><a href=#mensajería-con-encriptación>Mensajería con Encriptación</a></li><li><a href=#reunión-virtual>Reunión Virtual</a></li><li><a href=#protección-de-contraseña>Protección de contraseña</a></li><li><a href=#autenticación-de-dos-factores-a2f>Autenticación de Dos Factores (A2F)</a></li><li><a href=#contraseñas-seguras>Contraseñas Seguras</a></li><li><a href=#administrador-de-contraseñas>Administrador de contraseñas</a></li><li><a href=#preguntas-de-seguridad>Preguntas de Seguridad</a></li></ul></li><li><a href=#otras-recomendaciones>Otras Recomendaciones</a></li><li><a href=#clausura>Clausura</a><ul><li><a href=#reconocimientos>Reconocimientos</a></li><li><a href=#sobre-el-autor>Sobre el Autor</a></li></ul></li></ul></nav></aside></header><h1>Infosec 101 para Activistas</h1><h4>Drew Bjorn, Mark Sherman, Ph.D., y Blake Skinner</h4><article class=markdown><p>Sitio web: <a href=https://infosecforactivists.org/>https://infosecforactivists.org/</a></p><p>Archivo digital (PDF): <a href=https://infosecforactivists.org/Infosec_for_Activists.pdf>https://infosecforactivists.org/Infosec_for_Activists.pdf</a></p><h1 id=introducción>Introducción
+<a class=anchor href=#introducci%c3%b3n><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>América tiene una tradición muy fuerte de activismo que se remonta a <a href=https://www.history.com/topics/black-history/slavery-iv-slave-rebellions#section_1>las revueltas de esclavos</a> y <a href=https://themihs.info/calusa-period/>los
 levantamientos indígenas</a> que ocurrieron antes de la fundación
 de los Estados Unidos. En este día, el activismo en los Estados Unidos continúa siendo una cuestión
 crucial. Las manifestaciones se han convertido en una herramienta esencial utilizada por los
 activistas para crear conciencia y lograr cambios a nivel institucional. Dicho esto, desafiar las
-estructuras de poder existentes puede tener <a href="https://www.icnl.org/usprotestlawtracker/">un factor</a>
-de <a href="https://www.aclu.org/issues/free-speech/rights-protesters/anti-protest-bills-around-country">riesgo</a>.
-Por ejemplo, la publicidad puede resultar en acoso, arresto o en <a href="https://www.muo.com/what-is-doxxing/">la divulgación de información privada</a>.</p>
-<p>Su <a href="https://www.businessinsider.com/fbi-uses-instagram-etsy-linkedin-to-find-george-floyd-protester-2020-6">información personal</a>
+estructuras de poder existentes puede tener <a href=https://www.icnl.org/usprotestlawtracker/>un factor</a>
+de <a href=https://www.aclu.org/issues/free-speech/rights-protesters/anti-protest-bills-around-country>riesgo</a>.
+Por ejemplo, la publicidad puede resultar en acoso, arresto o en <a href=https://www.muo.com/what-is-doxxing/>la divulgación de información privada</a>.</p><p>Su <a href=https://www.businessinsider.com/fbi-uses-instagram-etsy-linkedin-to-find-george-floyd-protester-2020-6>información personal</a>
 es más accesible que nunca. En este documento, hablaremos sobre cómo los grupos hostiles pueden
 utilizar información en contra de los activistas y lo que puede hacer usted para protegerse a sí
 mismo y a los demás. Este documento se enfoca en la seguridad digital y en la seguridad de la
 información para los activistas que tienen requisitos y riesgos especiales. Otros han escrito sobre
 <a href="https://www.dropbox.com/sh/7mrawvmzqzrpg34/AACJuakD-ZjAQ70KAWEMO5zAa?dl=0">la seguridad durante las manifestaciones</a>
-en <a href="https://nymag.com/strategist/article/how-to-attend-george-floyd-protests-safely.html">sentido general</a>
-al igual que la <a href="https://www.wikihow.com/Protect-Personal-Information">seguridad digital</a> diaria.</p>
-<p><strong>Si tiene prisa, comience con la tabla de herramientas que se encuentra abajo.</strong> ¡Usted encontrará
+en <a href=https://nymag.com/strategist/article/how-to-attend-george-floyd-protests-safely.html>sentido general</a>
+al igual que la <a href=https://www.wikihow.com/Protect-Personal-Information>seguridad digital</a> diaria.</p><p><strong>Si tiene prisa, comience con la tabla de herramientas que se encuentra abajo.</strong> ¡Usted encontrará
 información que puede usar de inmediato! También hemos incluido sugerencias y conceptos para
-mantener su información privada más segura durante las marchas y en su vida diaria.</p>
-<p><strong>¿Por qué debería importarle?</strong> Desafiando las estructuras de poder existentes siempre ha
+mantener su información privada más segura durante las marchas y en su vida diaria.</p><p><strong>¿Por qué debería importarle?</strong> Desafiando las estructuras de poder existentes siempre ha
 conllevado un factor de riesgo, pero el panorama digital inalámbrico que ha resultado de la
 tecnología actual, lo hace másmas riesgoso. Las autoridades normalmente trabajan con empresas de
 tecnología para acceder a los datos del usuario, los cuales el usuario (usted) creía que eran
@@ -239,293 +32,84 @@ privados. La violación de datos expone nombres y otras clases de información p
 pueden tener repercusiones graves en su vida diaria. Nuestro objetivo es ayudar a que el activismo
 se lleve a cabo de manera segura y evitar que vigilancia policial, violencia y amenazas innecesarias
 lleguen a su empleo o a la puerta de su casa. Este documento es una guía que le ayudará a mantener
-el control sobre su información confidencial.</p>
-<h1 id="herramientos-para-usar">
-  Herramientos para usar
-  <a class="anchor" href="#herramientos-para-usar">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<p>¿Necesita modos comunicativos seguros y privados? Aquí se encuentran los servicios que puede usar inmediatamente. (No recibimos beneficios monetarios de ninguna ni de estas compañías, ni de otras.)</p>
-<table>
-<thead>
-<tr>
-<th>Herramientos</th>
-<th>Uso</th>
-<th>Lo que reemplaza, o lo que hace</th>
-<th>Lo que cuesta</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://bitwarden.com/">BitWarden</a></td>
-<td>Administrador de contraseñas</td>
-<td>Guarda seguramente su contraseña para que pueda usar contraseñas fuertes y únicas</td>
-<td>Gratis, algunas partes cuestan $1 por mes</td>
-</tr>
-<tr>
-<td><a href="https://duckduckgo.com/">DuckDuckGo</a></td>
-<td>Buscador de internet</td>
-<td>Reemplaza el Buscador de Google</td>
-<td>Gratis</td>
-</tr>
-<tr>
-<td><a href="https://help.duckduckgo.com/duckduckgo-help-pages/features/maps/">DuckDuckGo Maps</a></td>
-<td>Mapas, indicaciones</td>
-<td>Reemplaza Google Maps</td>
-<td>Gratis</td>
-</tr>
-<tr>
-<td><a href="https://www.mozilla.org/es-MX/firefox/browsers/">Firefox</a></td>
-<td>Navegador de internet</td>
-<td>Reemplaza Google Chrome, Safari, etc.</td>
-<td>Gratis</td>
-</tr>
-<tr>
-<td><a href="https://jitsi.org/">Jitsi</a></td>
-<td>Reuniones virtuales en línea</td>
-<td>Reemplaza Zoom, Google Meet, etc.</td>
-<td>Gratis</td>
-</tr>
-<tr>
-<td><a href="https://proton.me/mail">ProtonMail</a></td>
-<td>Correo electrónico</td>
-<td>Reemplaza Gmail, yahoo, correo electrónico de trabajo</td>
-<td>Gratis, algunas partes cuestan cinco dólares por mes</td>
-</tr>
-<tr>
-<td><a href="https://protonvpn.com/">ProtonVPN</a></td>
-<td>VPN (red privada virtual)</td>
-<td>Es una red privada que protege tu actividad de tus proveedores de televisión o teléfono, los cuales pueden compartir información con la policía</td>
-<td>Gratis, algunas partes cuestan 5 dólares o 10 dólares por mes</td>
-</tr>
-<tr>
-<td><a href="https://signal.org/es/">Signal</a></td>
-<td>Aplicación para enviar mensajes</td>
-<td>Reemplaza otras aplicaciones de enviar mensajes, por ejemplo la de Facebook</td>
-<td>Gratis</td>
-</tr>
-</tbody>
-</table>
-<h1 id="herramientas-que-no-debe-usar">
-  Herramientas que NO debe Usar
-  <a class="anchor" href="#herramientas-que-no-debe-usar">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<p>En este documento, hacemos recomendaciones en contra de algunas herramientas populares y comunes.
+el control sobre su información confidencial.</p><h1 id=herramientos-para-usar>Herramientos para usar
+<a class=anchor href=#herramientos-para-usar><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>¿Necesita modos comunicativos seguros y privados? Aquí se encuentran los servicios que puede usar inmediatamente. (No recibimos beneficios monetarios de ninguna ni de estas compañías, ni de otras.)</p><table><thead><tr><th>Herramientos</th><th>Uso</th><th>Lo que reemplaza, o lo que hace</th><th>Lo que cuesta</th></tr></thead><tbody><tr><td><a href=https://bitwarden.com/>BitWarden</a></td><td>Administrador de contraseñas</td><td>Guarda seguramente su contraseña para que pueda usar contraseñas fuertes y únicas</td><td>Gratis, algunas partes cuestan $1 por mes</td></tr><tr><td><a href=https://duckduckgo.com/>DuckDuckGo</a></td><td>Buscador de internet</td><td>Reemplaza el Buscador de Google</td><td>Gratis</td></tr><tr><td><a href=https://help.duckduckgo.com/duckduckgo-help-pages/features/maps/>DuckDuckGo Maps</a></td><td>Mapas, indicaciones</td><td>Reemplaza Google Maps</td><td>Gratis</td></tr><tr><td><a href=https://www.mozilla.org/es-MX/firefox/browsers/>Firefox</a></td><td>Navegador de internet</td><td>Reemplaza Google Chrome, Safari, etc.</td><td>Gratis</td></tr><tr><td><a href=https://jitsi.org/>Jitsi</a></td><td>Reuniones virtuales en línea</td><td>Reemplaza Zoom, Google Meet, etc.</td><td>Gratis</td></tr><tr><td><a href=https://proton.me/mail>ProtonMail</a></td><td>Correo electrónico</td><td>Reemplaza Gmail, yahoo, correo electrónico de trabajo</td><td>Gratis, algunas partes cuestan cinco dólares por mes</td></tr><tr><td><a href=https://protonvpn.com/>ProtonVPN</a></td><td>VPN (red privada virtual)</td><td>Es una red privada que protege tu actividad de tus proveedores de televisión o teléfono, los cuales pueden compartir información con la policía</td><td>Gratis, algunas partes cuestan 5 dólares o 10 dólares por mes</td></tr><tr><td><a href=https://signal.org/es/>Signal</a></td><td>Aplicación para enviar mensajes</td><td>Reemplaza otras aplicaciones de enviar mensajes, por ejemplo la de Facebook</td><td>Gratis</td></tr></tbody></table><h1 id=herramientas-que-no-debe-usar>Herramientas que NO debe Usar
+<a class=anchor href=#herramientas-que-no-debe-usar><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>En este documento, hacemos recomendaciones en contra de algunas herramientas populares y comunes.
 Nuestras recomendaciones se basan todas en los mismos principios rectores. La lógica detrás de ellos
 es simple: evite las herramientas que recopilan su información; la almacenan fuera de su control o
 la dejan expuesta públicamente. El más desafiante probablemente sea Google Maps, el cual aconsejamos
 que evite mientras asiste a una marcha. Google Maps siempre rastrea a sus usuarios y Google mantiene
-estos datos de rastreo en detalle para siempre. Todos estos datos pueden ser <a href="https://www.eff.org/deeplinks/2019/04/googles-sensorvault-can-tell-police-where-youve-been">entregados a las
-autoridades</a>. <a href="https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html">La policía y otras agencias</a> pueden usar los datos de alta precisión de Google para
+estos datos de rastreo en detalle para siempre. Todos estos datos pueden ser <a href=https://www.eff.org/deeplinks/2019/04/googles-sensorvault-can-tell-police-where-youve-been>entregados a las
+autoridades</a>. <a href=https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html>La policía y otras agencias</a> pueden usar los datos de alta precisión de Google para
 ubicar a una persona en una marcha. Aún más peligroso, pueden ubicar a una persona en áreas
 específicas dentro de una marcha o cerca de actos criminales, a unos pocos pies y sin perder tiempo.
-Nuestras sugerencias alternativas, <a href="https://maps.apple.com/go">Apple Maps</a> y <a href="https://help.duckduckgo.com/duckduckgo-help-pages/features/maps/">DuckDuckGo Maps</a>, no rastrean a sus usuarios de esta
+Nuestras sugerencias alternativas, <a href=https://maps.apple.com/go>Apple Maps</a> y <a href=https://help.duckduckgo.com/duckduckgo-help-pages/features/maps/>DuckDuckGo Maps</a>, no rastrean a sus usuarios de esta
 manera. También hacen todo lo posible por anonimizar los datos recopilados por los proveedores de
-mapas.</p>
-<p>Otra herramienta popular <a href="https://gizmodo.com/why-you-should-stop-using-telegram-right-now-1782557415">que no recomendamos</a> es Telegram, ya que tiene un historial de <a href="https://www.wired.com/story/telegram-encryption-whatsapp-settings/">problemas de
+mapas.</p><p>Otra herramienta popular <a href=https://gizmodo.com/why-you-should-stop-using-telegram-right-now-1782557415>que no recomendamos</a> es Telegram, ya que tiene un historial de <a href=https://www.wired.com/story/telegram-encryption-whatsapp-settings/>problemas de
 seguridad</a> . Aunque admite encriptación de extremo a extremo para mensajes entre personas (consulte
-<a href="#mensajer%c3%ada-con-Encriptaci%c3%b3n">Mensajería con encriptación</a> abajo), no aplica esta seguridad a los
+<a href=#mensajer%c3%ada-con-Encriptaci%c3%b3n>Mensajería con encriptación</a> abajo), no aplica esta seguridad a los
 mensajes grupales. Los mensajes grupales pueden ser reportados como &ldquo;spam&rdquo; o &ldquo;abuso&rdquo;, y el personal
 y los contratistas de Telegram pueden revisar el contenido completo de los mensajes. Luego, esos
 datos se pueden compartir con las autoridades. Para empeorar las cosas, la técnica de encriptación
-completa no está activa para todas las conversaciones por defecto.</p>
-<p>WhatsApp, aunque es popular en algunos círculos de activistas,<a href="https://theintercept.com/2016/06/22/battle-of-the-secure-messaging-apps-how-signal-beats-whatsapp/">tiene problemas similares</a> y también
-recomendamos no utilizar ese servicio. Recomendamos <a href="https://signal.org/en/">Signal,</a> que se
-construyó desde el principio para la seguridad personal.</p>
-<p>Un razonamiento similar se aplica a todas las recomendaciones que hacemos en este documento. Si lo
+completa no está activa para todas las conversaciones por defecto.</p><p>WhatsApp, aunque es popular en algunos círculos de activistas,<a href=https://theintercept.com/2016/06/22/battle-of-the-secure-messaging-apps-how-signal-beats-whatsapp/>tiene problemas similares</a> y también
+recomendamos no utilizar ese servicio. Recomendamos <a href=https://signal.org/en/>Signal,</a> que se
+construyó desde el principio para la seguridad personal.</p><p>Un razonamiento similar se aplica a todas las recomendaciones que hacemos en este documento. Si lo
 usa, probablemente hayamos investigado sus características de seguridad para este proyecto. Si hay
 herramientas a las que no está dispuesto a renunciar, le recomendamos que investigue sus políticas
-de privacidad y lo que puede hacer para proteger sus datos.</p>
-<h1 id="cosas-que-debe-saber">
-  Cosas que Debe Saber
-  <a class="anchor" href="#cosas-que-debe-saber">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<p>Su teléfono es una mina de oro de datos, llena de información de rastreo e identificación. Esto
+de privacidad y lo que puede hacer para proteger sus datos.</p><h1 id=cosas-que-debe-saber>Cosas que Debe Saber
+<a class=anchor href=#cosas-que-debe-saber><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>Su teléfono es una mina de oro de datos, llena de información de rastreo e identificación. Esto
 incluye dónde ha estado, qué ha dicho y con quién se ha comunicado. Esta sección le ayudará a
 mantener esos datos seguros mientras asiste a una protesta, protegiéndose a usted y a quienes lo
 rodean. ¡Encuentra instrucciones para iPhone y Android a continuación! ¡Protéjase y prepárese para
-protestar ahora mismo!</p>
-<p>Suponga que la policía puede registrar y grabar cualquier mensaje que envíe, llamadas telefónicas
+protestar ahora mismo!</p><p>Suponga que la policía puede registrar y grabar cualquier mensaje que envíe, llamadas telefónicas
 que realice o cualquier otra cosa que envíe o reciba. Si su información está fuertemente encriptada,
 es posible que aún tengan acceso a ella, pero no pueden desencriptarla. Asegúrese de actualizar su
-teléfono al último sistema operativo (SO) compatible mucho antes de la marcha.</p>
-<p>Si tiene inquietudes sobre su privacidad y su teléfono ya no recibe actualizaciones de software,
+teléfono al último sistema operativo (SO) compatible mucho antes de la marcha.</p><p>Si tiene inquietudes sobre su privacidad y su teléfono ya no recibe actualizaciones de software,
 considere no traerlo. Si asiste a una protesta sin teléfono, no vaya solo. Organice horarios y
-lugares donde puede reunirse con sus amigos antes de ir a la protesta.</p>
-<h1 id="asistir-a-una-acción">
-  Asistir a una acción
-  <a class="anchor" href="#asistir-a-una-acci%c3%b3n">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<h2 id="antes">
-  Antes
-  <a class="anchor" href="#antes">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<ul>
-<li>No se marque a sí mismo como &ldquo;Asistire&rdquo; en Facebook.
-<ul>
-<li>Tome nota de los detalles y guárdelos en un dispositivo personal o en una hoja de papel.</li>
-</ul>
-</li>
-<li>Practique la contraseña de su teléfono. Habilite y practique el uso de <a href="https://support.apple.com/es-us/HT208076">Emergencia SOS</a> (iOS) y <a href="https://support.google.com/pixelphone/answer/6093922?hl=es-419#lockdown">el modo Lockdown</a> (Android).</li>
-<li>Si necesita buscar en Internet cualquier información relacionada con la protesta, use DuckDuckGo
-y las sesiones de navegación privada.</li>
-<li>Asegúrese de que su dispositivo esté actualizado a la última versión de su sistema operativo y de
-que todas sus aplicaciones estén actualizadas.
-<ul>
-<li>Verifique y actualice su versión de <a href="https://support.google.com/android/answer/7680439?hl=es-419">Android</a> o <a href="https://support.apple.com/es-us/HT204204">iOS</a> para asegurarse de tener las últimas
-correcciones de seguridad.</li>
-</ul>
-</li>
-<li>Configure una cuenta de <a href="https://signal.org/es/">Signal.</a>  Si no desea utilizar su número de teléfono personal, puede crear
-un nuevo número de teléfono con <a href="https://voice.google.com">Google Voice</a> y registrarlo en Signal.</li>
-<li>Encuentre un amigo (¡o varios!) con quien ir y conéctese a través de Signal para discutir planes.</li>
-</ul>
-<h2 id="durante">
-  Durante
-  <a class="anchor" href="#durante">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<ul>
-<li>Utilice un compañero de protesta.</li>
-<li>Confirme los planes de la reunión con sus compañeros de protesta antes de partir hacia el evento.
-<ul>
-<li>Una vez que se reúnan, acuerden un lugar alternativo en caso de que se separen.</li>
-</ul>
-</li>
-<li>Utilice <a href="https://maps.apple.com/go">Apple Maps</a> o <a href="https://help.duckduckgo.com/duckduckgo-help-pages/features/maps/">DuckDuckGo Maps</a> si necesita indicaciones para llegar a la ubicación de la
-protesta.
-<ul>
-<li>Si puede, imprima las instrucciones antes de partir para la marcha. Apple Maps no tiene un modo
-fuera de línea y no se podrá utilizar sin una conexión a Internet.</li>
-</ul>
-</li>
-</ul>
-<h2 id="después">
-  Después
-  <a class="anchor" href="#despu%c3%a9s">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<ul>
-<li>Deje y elimine los grupos de señales creados para esa protesta.</li>
-<li>¡No publique sus fotos de protesta en las redes sociales!</li>
-</ul>
-<h1 id="preparando-su-teléfono">
-  Preparando su teléfono
-  <a class="anchor" href="#preparando-su-tel%c3%a9fono">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<p>Su teléfono es una herramienta poderosa, pero también un dispositivo de rastreo poderoso para las
+lugares donde puede reunirse con sus amigos antes de ir a la protesta.</p><h1 id=asistir-a-una-acción>Asistir a una acción
+<a class=anchor href=#asistir-a-una-acci%c3%b3n><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><h2 id=antes>Antes
+<a class=anchor href=#antes><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><ul><li>No se marque a sí mismo como &ldquo;Asistire&rdquo; en Facebook.<ul><li>Tome nota de los detalles y guárdelos en un dispositivo personal o en una hoja de papel.</li></ul></li><li>Practique la contraseña de su teléfono. Habilite y practique el uso de <a href=https://support.apple.com/es-us/HT208076>Emergencia SOS</a> (iOS) y <a href="https://support.google.com/pixelphone/answer/6093922?hl=es-419#lockdown">el modo Lockdown</a> (Android).</li><li>Si necesita buscar en Internet cualquier información relacionada con la protesta, use DuckDuckGo
+y las sesiones de navegación privada.</li><li>Asegúrese de que su dispositivo esté actualizado a la última versión de su sistema operativo y de
+que todas sus aplicaciones estén actualizadas.<ul><li>Verifique y actualice su versión de <a href="https://support.google.com/android/answer/7680439?hl=es-419">Android</a> o <a href=https://support.apple.com/es-us/HT204204>iOS</a> para asegurarse de tener las últimas
+correcciones de seguridad.</li></ul></li><li>Configure una cuenta de <a href=https://signal.org/es/>Signal.</a> Si no desea utilizar su número de teléfono personal, puede crear
+un nuevo número de teléfono con <a href=https://voice.google.com>Google Voice</a> y registrarlo en Signal.</li><li>Encuentre un amigo (¡o varios!) con quien ir y conéctese a través de Signal para discutir planes.</li></ul><h2 id=durante>Durante
+<a class=anchor href=#durante><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><ul><li>Utilice un compañero de protesta.</li><li>Confirme los planes de la reunión con sus compañeros de protesta antes de partir hacia el evento.<ul><li>Una vez que se reúnan, acuerden un lugar alternativo en caso de que se separen.</li></ul></li><li>Utilice <a href=https://maps.apple.com/go>Apple Maps</a> o <a href=https://help.duckduckgo.com/duckduckgo-help-pages/features/maps/>DuckDuckGo Maps</a> si necesita indicaciones para llegar a la ubicación de la
+protesta.<ul><li>Si puede, imprima las instrucciones antes de partir para la marcha. Apple Maps no tiene un modo
+fuera de línea y no se podrá utilizar sin una conexión a Internet.</li></ul></li></ul><h2 id=después>Después
+<a class=anchor href=#despu%c3%a9s><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><ul><li>Deje y elimine los grupos de señales creados para esa protesta.</li><li>¡No publique sus fotos de protesta en las redes sociales!</li></ul><h1 id=preparando-su-teléfono>Preparando su teléfono
+<a class=anchor href=#preparando-su-tel%c3%a9fono><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>Su teléfono es una herramienta poderosa, pero también un dispositivo de rastreo poderoso para las
 autoridades y otras entidades. Los teléfonos registran y comparten mucha información sobre su
 paradero y actividad con diferentes servicios. Esto suele ser algo bueno, ya que ayuda a que sus
 aplicaciones respondan a sus necesidades y situación. Pero cuando asiste a una acción, esas
 funciones pueden proporcionar una ruta de navegación digital abundante. Queremos evitar que se
-eliminen esas migas de pan digitales, y aquí hay algunos consejos sobre cómo hacerlo.</p>
-<p>Asistir a una acción conlleva una amenaza adicional a la privacidad. Si su teléfono se pierde o es
+eliminen esas migas de pan digitales, y aquí hay algunos consejos sobre cómo hacerlo.</p><p>Asistir a una acción conlleva una amenaza adicional a la privacidad. Si su teléfono se pierde o es
 confiscado por la policía, toda la información que contiene podría estar disponible para la policía.
 A continuación, compartiremos consejos para proteger su teléfono contra intrusiones en caso de que
-caiga en manos de otra persona.</p>
-<p>Esta sección utiliza la palabra &ldquo;teléfono&rdquo; para referirse a un teléfono inteligente con iOS o
+caiga en manos de otra persona.</p><p>Esta sección utiliza la palabra &ldquo;teléfono&rdquo; para referirse a un teléfono inteligente con iOS o
 Android, como los fabricados por Apple, Google, Samsung y otros. Si está utilizando un teléfono más
-simple, es probable que sus riesgos sean menores.</p>
-<h2 id="migas-de-pan-digitales">
-  Migas de Pan Digitales
-  <a class="anchor" href="#migas-de-pan-digitales">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Ya sea que tenga un iPhone o un Android, las amenazas a su privacidad son las mismas. Su teléfono
+simple, es probable que sus riesgos sean menores.</p><h2 id=migas-de-pan-digitales>Migas de Pan Digitales
+<a class=anchor href=#migas-de-pan-digitales><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Ya sea que tenga un iPhone o un Android, las amenazas a su privacidad son las mismas. Su teléfono
 tiene un receptor <strong>GPS</strong> integrado que permite que funcionen mapas y otras aplicaciones basadas en la
 ubicación. El propio teléfono mantendrá ese receptor GPS encendido en todo momento, registrando
 dónde se encuentra y, ocasionalmente, enviará actualizaciones sobre su paradero a Google, Apple u
 otros editores de aplicaciones. Por lo tanto, queremos apagar el receptor GPS, lo que evita
-que los datos de ubicación se registren.</p>
-<p><strong>Bluetooth y WiFi</strong> son tecnologías comunes que utilizan radio de corto alcance para comunicarse con
+que los datos de ubicación se registren.</p><p><strong>Bluetooth y WiFi</strong> son tecnologías comunes que utilizan radio de corto alcance para comunicarse con
 otros dispositivos. Desafortunadamente, su funcionamiento requiere que su teléfono transmita
 información identificable sobre sí mismo. Esta información puede ser observada por una &ldquo;señal&rdquo; o
 dispositivo de escaneo. Las tiendas, las agencias gubernamentales y la policía utilizan estos
 dispositivos para identificar a las personas que se encuentran cerca. Este tipo de vigilancia es
 profundamente peligrosa en una marcha, por lo que debemos desactivar Bluetooth y WiFi siempre que
-sea posible.</p>
-<p><strong>Su operador de telefonía móvil</strong> puede rastrear su ubicación cuando su teléfono contacta con sus
+sea posible.</p><p><strong>Su operador de telefonía móvil</strong> puede rastrear su ubicación cuando su teléfono contacta con sus
 torres de radio. Los teléfonos se conectan a las torres periódicamente mientras están encendidos,
 incluso si no se están utilizando activamente. Las conexiones de las torres son lo suficientemente
 precisas para colocar a un individuo en la misma cuadra de una marcha. Esta información puede ser
-accesible por las autoridades a través de una citación.</p>
-<p>Todos los teléfonos tienen una opción para <strong>&ldquo;modo avión&rdquo;,</strong> que desactiva todas las radios. Esta
+accesible por las autoridades a través de una citación.</p><p>Todos los teléfonos tienen una opción para <strong>&ldquo;modo avión&rdquo;,</strong> que desactiva todas las radios. Esta
 función se creó para viajar en un avión, debido a la preocupación de que los teléfonos pudieran
 interferir con el funcionamiento del avión. Hoy en día, es una forma confiable de desactivar las
 tres radios con un solo botón: WiFi, Bluetooth y operador de telefonía móvil. Hay algunas
 advertencias leves, detalladas en las instrucciones de configuración de iPhone y Android, a
-continuación.</p>
-<h2 id="protección-contra-intrusiones">
-  Protección contra intrusiones
-  <a class="anchor" href="#protecci%c3%b3n-contra-intrusiones">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Si asiste a una marcha, existe el riesgo de que la policía confisque su teléfono. Tendrán
+continuación.</p><h2 id=protección-contra-intrusiones>Protección contra intrusiones
+<a class=anchor href=#protecci%c3%b3n-contra-intrusiones><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Si asiste a una marcha, existe el riesgo de que la policía confisque su teléfono. Tendrán
 físicamente su teléfono y pueden intentar extraer información. Todos los teléfonos tienen <strong>pantallas
 de bloqueo</strong>, que es la primera línea de defensa. En el uso diario, queremos que nuestra pantalla de
 bloqueo evite que un ladrón u otro extraño abra fácilmente el teléfono. Con eso, los lectores de
@@ -538,53 +122,25 @@ una acción</strong>. Los otros mecanismos de desbloqueo generalmente implican d
 un código. La policía (o cualquier persona) puede rastrear un deslizamiento, una forma o un código
 corto a partir de los aceites finos que deja el dedo en la pantalla. <strong>Ingresar un código es lo más
 seguro.</strong> El código debe ser lo suficientemente largo para evitar que sus huellas digitales lo
-revelen.</p>
-<p>Los teléfonos también le permiten seleccionar cuánto tiempo deben esperar antes de auto bloquearse.
+revelen.</p><p>Los teléfonos también le permiten seleccionar cuánto tiempo deben esperar antes de auto bloquearse.
 Debe configurar este tiempo para que sea lo más corto posible, de modo que, si deja caer su teléfono
 o si es robado, el temporizador expirará y el teléfono se bloqueará antes de que alguien más pueda
-acceder a él. El <strong>botón de encendido debe hacer que el teléfono se bloquee inmediatamente.</strong></p>
-<p>Hay formas de acceder a los datos de un teléfono sin desbloquearlo. Una forma de defenderse de estos
+acceder a él. El <strong>botón de encendido debe hacer que el teléfono se bloquee inmediatamente.</strong></p><p>Hay formas de acceder a los datos de un teléfono sin desbloquearlo. Una forma de defenderse de estos
 métodos es <strong>la encriptación de disco completo</strong>, donde toda la información del teléfono se almacena de
 forma cifrada. Esto evita que la policía elimine los chips de almacenamiento de su teléfono, ya que
 todo el contenido será ilegible sin que su código de desbloqueo específico lo desbloquee en su
-teléfono específico.</p>
-<p>Para usar la encriptación de disco completo en un iPhone, simplemente configure un código de acceso
-a la pantalla de bloqueo. Si no tiene un código de acceso, no activará la función.</p>
-<p>Para ver si su Android tiene la encriptación disponible y activada, puede <strong>ir a Configuración, elegir
-Seguridad y buscar la opción Encriptar teléfono.</strong>  Dirá &ldquo;Cifrado&rdquo; o le pedirá que active el cifrado.
+teléfono específico.</p><p>Para usar la encriptación de disco completo en un iPhone, simplemente configure un código de acceso
+a la pantalla de bloqueo. Si no tiene un código de acceso, no activará la función.</p><p>Para ver si su Android tiene la encriptación disponible y activada, puede <strong>ir a Configuración, elegir
+Seguridad y buscar la opción Encriptar teléfono.</strong> Dirá &ldquo;Cifrado&rdquo; o le pedirá que active el cifrado.
 Activar el cifrado tardará unas horas y su dispositivo deberá estar conectado a su cargador. Esto es
-algo que solo se necesita hacer una vez.</p>
-<p>Si su dispositivo Android se envió con <a href="https://www.computerworld.com/article/2995437/google-makes-full-disk-encryption-and-secure-boot-mandatory-for-some-android-60-devices.html">Android 6 o una versión anterior</a>, es posible que no pueda
-utilizar esta función.</p>
-<h2 id="airdrop">
-  AirDrop
-  <a class="anchor" href="#airdrop">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>A pesar del enfoque de Apple en la privacidad, aún hay puntos de vulnerabilidad con su software. Uno de ellos involucra la característica de <a href="https://support.apple.com/es-us/HT204144">Airdrop</a>. Cuando está activada, información personal puede salir del aparato, por ejemplo el número de teléfono y dirección electrónica, lo cual puede ser enviada a <a href="https://arstechnica.com/gadgets/2021/04/apples-airdrop-leaks-users-pii-and-theres-not-much-they-can-do-about-it/">otro aparato</a>.</p>
-<p>Recomendamos que lo mantenga desactivado cuando asista o esté cerca de una acción todo el tiempo, y en la vida diaria al menos de compartir archivos con alguien.</p>
-<h2 id="copias-de-seguridad-del-teléfono">
-  Copias de seguridad del teléfono
-  <a class="anchor" href="#copias-de-seguridad-del-tel%c3%a9fono">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Mantener copias de seguridad de sus datos importantes siempre es una buena idea, pero las copias de
+algo que solo se necesita hacer una vez.</p><p>Si su dispositivo Android se envió con <a href=https://www.computerworld.com/article/2995437/google-makes-full-disk-encryption-and-secure-boot-mandatory-for-some-android-60-devices.html>Android 6 o una versión anterior</a>, es posible que no pueda
+utilizar esta función.</p><h2 id=airdrop>AirDrop
+<a class=anchor href=#airdrop><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>A pesar del enfoque de Apple en la privacidad, aún hay puntos de vulnerabilidad con su software. Uno de ellos involucra la característica de <a href=https://support.apple.com/es-us/HT204144>Airdrop</a>. Cuando está activada, información personal puede salir del aparato, por ejemplo el número de teléfono y dirección electrónica, lo cual puede ser enviada a <a href=https://arstechnica.com/gadgets/2021/04/apples-airdrop-leaks-users-pii-and-theres-not-much-they-can-do-about-it/>otro aparato</a>.</p><p>Recomendamos que lo mantenga desactivado cuando asista o esté cerca de una acción todo el tiempo, y en la vida diaria al menos de compartir archivos con alguien.</p><h2 id=copias-de-seguridad-del-teléfono>Copias de seguridad del teléfono
+<a class=anchor href=#copias-de-seguridad-del-tel%c3%a9fono><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Mantener copias de seguridad de sus datos importantes siempre es una buena idea, pero las copias de
 seguridad integradas en la nube de iOS y Android representan un problema para los activistas. Las
 copias de seguridad realizadas con iCloud están encriptadas de tal manera que los empleados de Apple
-pueden acceder a ellas. Esta debilidad se atribuye a <a href="https://www.reuters.com/article/us-apple-fbi-icloud-exclusive/exclusive-apple-dropped-plan-for-encrypting-backups-after-fbi-complained-sources-idUSKBN1ZK1CT">la presión del FBI</a>. Cualquier cosa en la copia
-de seguridad, que puede incluir fotos, contactos, mensajes sin cifrar <a href="https://oleb.net/2020/icloud-end-to-end-encryption/">y más</a>, se puede entregar a las
+pueden acceder a ellas. Esta debilidad se atribuye a <a href=https://www.reuters.com/article/us-apple-fbi-icloud-exclusive/exclusive-apple-dropped-plan-for-encrypting-backups-after-fbi-complained-sources-idUSKBN1ZK1CT>la presión del FBI</a>. Cualquier cosa en la copia
+de seguridad, que puede incluir fotos, contactos, mensajes sin cifrar <a href=https://oleb.net/2020/icloud-end-to-end-encryption/>y más</a>, se puede entregar a las
 autoridades. Las claves para desbloquear la encriptación de disco completo del teléfono también se
 almacenan en la copia de seguridad de iCloud. Este arreglo les permite a las autoridades que
 soliciten los datos de respaldo de Apple y así usar la clave para desbloquear todo el teléfono.
@@ -592,265 +148,71 @@ También ofrece una conveniencia, donde si el usuario olvida su código de desbl
 recuperar el dispositivo. Para los activistas, el riesgo que representa el hecho de que sus claves
 de desbloqueo sean accesibles para las autoridades es potencialmente mayor que los beneficios de esa
 comodidad.
-<strong>No recomendamos el uso de copias de seguridad de iCloud.</strong></p>
-<p>_<a href="https://support.google.com/drive/answer/6305834?hl=es-419&amp;co=GENIE.Platform%3DAndroid">Android utiliza Google Drive</a> para la copia de seguridad de datos, que generalmente no contiene
+<strong>No recomendamos el uso de copias de seguridad de iCloud.</strong></p><p>_<a href="https://support.google.com/drive/answer/6305834?hl=es-419&co=GENIE.Platform%3DAndroid">Android utiliza Google Drive</a> para la copia de seguridad de datos, que generalmente no contiene
 claves de desbloqueo, pero incluye automáticamente datos de aplicaciones, datos de llamadas,
 contactos, eventos del calendario, videos y fotos. A partir de la versión 9 de Android (con nombre
 en código &ldquo;Pie&rdquo; y lanzado en 2018), Google ha ofrecido copias de seguridad encriptadas de un extremo
-a otro que <a href="https://security.googleblog.com/2018/10/google-and-android-have-your-back-by.html">ni siquiera ellos pueden abrir</a>  sin la contraseña del usuario. Si su teléfono usa la
-versión 9 o más reciente, <a href="https://thehackernews.com/2018/10/android-cloud-backup.html">esta función se activa automáticamente</a>  siempre que tenga una pantalla de
+a otro que <a href=https://security.googleblog.com/2018/10/google-and-android-have-your-back-by.html>ni siquiera ellos pueden abrir</a> sin la contraseña del usuario. Si su teléfono usa la
+versión 9 o más reciente, <a href=https://thehackernews.com/2018/10/android-cloud-backup.html>esta función se activa automáticamente</a> siempre que tenga una pantalla de
 bloqueo protegida con un PIN, patrón o código de acceso.
-<strong>No utilice copias de seguridad en la nube de Android anteriores a la versión 9.</strong></p>
-<h2 id="instrucciones-de-configuración-de-su-móvil">
-  Instrucciones de configuración de su móvil
-  <a class="anchor" href="#instrucciones-de-configuraci%c3%b3n-de-su-m%c3%b3vil">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>A continuación, tenemos pasos específicos para preparar su iPhone o Android.</p>
-
-
-
-
-<div class="book-tabs"><input type="radio" class="toggle" name="tabs-%!s(&lt;nil&gt;)" id="tabs-%!s(&lt;nil&gt;)-0" checked="checked" />
-  <label for="tabs-%!s(&lt;nil&gt;)-0">iPhone</label>
-  <div class="book-tabs-content markdown-inner"><h3 id="configuración-de-iphone">
-  Configuración de iPhone
-  <a class="anchor" href="#configuraci%c3%b3n-de-iphone">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h3>
-<p>Apple le ha dado prioridad a la seguridad en los últimos añosanos y han proveído características
+<strong>No utilice copias de seguridad en la nube de Android anteriores a la versión 9.</strong></p><h2 id=instrucciones-de-configuración-de-su-móvil>Instrucciones de configuración de su móvil
+<a class=anchor href=#instrucciones-de-configuraci%c3%b3n-de-su-m%c3%b3vil><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>A continuación, tenemos pasos específicos para preparar su iPhone o Android.</p><div class=book-tabs><input type=radio class=toggle name="tabs-%!s(<nil>)" id="tabs-%!s(<nil>)-0" checked>
+<label for="tabs-%!s(<nil>)-0">iPhone</label><div class="book-tabs-content markdown-inner"><h3 id=configuración-de-iphone>Configuración de iPhone
+<a class=anchor href=#configuraci%c3%b3n-de-iphone><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Apple le ha dado prioridad a la seguridad en los últimos añosanos y han proveído características
 específicasespecificas para el iPhone las cuales facilitan la seguridad de su móvil. Estos pasos
-pueden ser usados para asegurar razonablemente su móvil para una marcha.</p>
-<ul>
-<li>[es] Set AirDrop to <a href="https://support.apple.com/es-us/HT204144#setoptions">Receiving Off</a>
-<ul>
-<li>[es] <em>Settings → General → AirDrop</em>, select “Receiving Off”</li>
-</ul>
-</li>
-<li>Desactivar su receptor de GPS deshabilitando los servicios de localización.
-<ul>
-<li>Aun en modo de vuelo, iOS mantendrá su receptor de GPS activo a menos que haga esto.</li>
-<li><em>Configuración → Privacidad → <em>Localización</em></em>, apagar Servicios de Localización</li>
-</ul>
-</li>
-<li>Apagar Bluetooth, Wi-fi y el portador de radio telefónico activando modo de vuelo</li>
-<li>Instalación de Pantalla de bloqueo
-<ul>
-<li>[es] Set your screen to auto-lock as quickly as possible, and
-require your passcode immediately.
-<ul>
-<li>Configuración → Pantalla y Brillo → Bloqueo Automático, poner a 30 segundos o 1 minuto, máximo.</li>
-<li>Configuración → Touch ID y código, poner “solicitar código” a “De inmediato”</li>
-</ul>
-</li>
-<li>Practicar con iOS modo Emergencia SOS y desactivar la característica de llamada automática.
-<ul>
-<li>Desactivar Configuraciones → Emergencia SOS → Llamada automática</li>
-<li>Desactivar Configuraciones → Emergencia SOS → Llamar con botón activación/ reposo</li>
-<li>Presiona and mantenga pulsado el botón de encendido y el botón de volumen hasta que el Emergencia SOS de Emergencia aparezca en la pantalla de bloqueo. Face ID y Touch ID serán desactivados hasta que el código sea ingresado.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Desactivar Touch ID y Face ID
-<ul>
-<li>Configuración → Touch ID y Código, debajo de la sección “Usa Touch ID para:”, arrastra todos los controles deslizantes a la derecha para apagarlos.</li>
-</ul>
-</li>
-</ul>
-</div><input type="radio" class="toggle" name="tabs-%!s(&lt;nil&gt;)" id="tabs-%!s(&lt;nil&gt;)-1"  />
-  <label for="tabs-%!s(&lt;nil&gt;)-1">Android</label>
-  <div class="book-tabs-content markdown-inner"><h3 id="configuración-de-android">
-  Configuración de Android
-  <a class="anchor" href="#configuraci%c3%b3n-de-android">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h3>
-<p>Android tiene configuraciones flexibles que pueden ser usadas para asegurar tu teléfono y hacerlo usable en varias situaciones. A continuación, presentamos pasos para asegurar tu móvil para una marcha.</p>
-<ul>
-<li>Desactivar su receptor de GPS deshabilitando los servicios de localización.
-<ul>
-<li>Deslice hacia abajo desdedese la parte superior de la pantalla del dispositivo. Puede haber un control deslizante para Servicios de Localización (suelen verse como un satélite”)</li>
-<li>Si no tiene un botón al bajar el panel de notificaciones, entonces vaya a
-<em>Ajustes → Localización</em> y apagar “Utilizar Localización”</li>
-</ul>
-</li>
-<li>Apagar Bluetooth, Wi-fi y el portador de radio telefónico activando modo de vuelo
-<ul>
-<li>Deslice hacia abajo desdedese la parte superior de la pantalla del dispositivo. Puede haber un control deslizante para Modo de Vuelo (Suele verse como un avión). Asegúrese que el Modoque Modo de vuelo estéeste encendido.</li>
-<li>Si usted no tiene el botón al bajar el panel de notificaciones, vaya a <em>Ajustes → Red e Internet</em> y encienda “Modo de Vuelo.”</li>
-<li>Usted puede encender su data móvil sin dejar Modo de vuelo, si lo necesita. Presione el botón Data móvil en el panel de notificaciones después de activar el Modoactivar Modo de Vuelo. Esos dos botones se encuentran, frecuentemente, a la par.</li>
-<li>Asegúrese que Bluetooth estéeste verdaderamente apagado. Android puedepuedo ser que lo mantenga encendido si los dispositivossi dispositivos de bluetooth están conectados. El botón en el panel de notificaciones debe ser gris/ sin color para indicar que estáesta apagado.</li>
-</ul>
-</li>
-<li>Instalación de Pantalla de bloqueo
-<ul>
-<li>Vaya a <em>Ajustes → Seguridad → Pantalla de Bloqueo</em> y seleccionar PIN o contraseña
-<ul>
-<li>Se le dará la opción de decidir si quiere que las notificaciones sean mostradas en la pantalla en lo que su móvil estáesta bloqueado. La opción másmas segura es “Nunca”. Si eso no le funciona, escoja “ocultar notificaciones sensibles.”</li>
-</ul>
-</li>
-<li>Toque el icono de ajustes para abrir el menú configuración:
-<ul>
-<li>Ajustar “Tiempo de espera de la pantalla” a Bloquear inmediatamente.</li>
-<li>Marque la opción “Bloquear con tecla encendido”</li>
-</ul>
-</li>
-<li>Desactivar Smart Lock si lo tiene. Puede mantener su móvil desbloqueado cuando menos se lo espera, lo cual es peligroso durante una marcha.</li>
-</ul>
-</li>
-<li>Vaya a <em>configuración → Pantalla y brillo → Avanzado → Bloqueo Automático</em> y escoja la opción más corta posible, normalmente 15 segundos.</li>
-</ul>
-</div></div>
-
-<h1 id="ideas-de-seguridad">
-  Ideas de Seguridad
-  <a class="anchor" href="#ideas-de-seguridad">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<p>Esta sección tratasección se trata de mantener su información privada en el resto de su vida. En
+pueden ser usados para asegurar razonablemente su móvil para una marcha.</p><ul><li>[es] Set AirDrop to <a href=https://support.apple.com/es-us/HT204144#setoptions>Receiving Off</a><ul><li>[es] <em>Settings → General → AirDrop</em>, select “Receiving Off”</li></ul></li><li>Desactivar su receptor de GPS deshabilitando los servicios de localización.<ul><li>Aun en modo de vuelo, iOS mantendrá su receptor de GPS activo a menos que haga esto.</li><li><em>Configuración → Privacidad → <em>Localización</em></em>, apagar Servicios de Localización</li></ul></li><li>Apagar Bluetooth, Wi-fi y el portador de radio telefónico activando modo de vuelo</li><li>Instalación de Pantalla de bloqueo<ul><li>[es] Set your screen to auto-lock as quickly as possible, and
+require your passcode immediately.<ul><li>Configuración → Pantalla y Brillo → Bloqueo Automático, poner a 30 segundos o 1 minuto, máximo.</li><li>Configuración → Touch ID y código, poner “solicitar código” a “De inmediato”</li></ul></li><li>Practicar con iOS modo Emergencia SOS y desactivar la característica de llamada automática.<ul><li>Desactivar Configuraciones → Emergencia SOS → Llamada automática</li><li>Desactivar Configuraciones → Emergencia SOS → Llamar con botón activación/ reposo</li><li>Presiona and mantenga pulsado el botón de encendido y el botón de volumen hasta que el Emergencia SOS de Emergencia aparezca en la pantalla de bloqueo. Face ID y Touch ID serán desactivados hasta que el código sea ingresado.</li></ul></li></ul></li><li>Desactivar Touch ID y Face ID<ul><li>Configuración → Touch ID y Código, debajo de la sección “Usa Touch ID para:”, arrastra todos los controles deslizantes a la derecha para apagarlos.</li></ul></li></ul></div><input type=radio class=toggle name="tabs-%!s(<nil>)" id="tabs-%!s(<nil>)-1">
+<label for="tabs-%!s(<nil>)-1">Android</label><div class="book-tabs-content markdown-inner"><h3 id=configuración-de-android>Configuración de Android
+<a class=anchor href=#configuraci%c3%b3n-de-android><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h3><p>Android tiene configuraciones flexibles que pueden ser usadas para asegurar tu teléfono y hacerlo usable en varias situaciones. A continuación, presentamos pasos para asegurar tu móvil para una marcha.</p><ul><li>Desactivar su receptor de GPS deshabilitando los servicios de localización.<ul><li>Deslice hacia abajo desdedese la parte superior de la pantalla del dispositivo. Puede haber un control deslizante para Servicios de Localización (suelen verse como un satélite”)</li><li>Si no tiene un botón al bajar el panel de notificaciones, entonces vaya a
+<em>Ajustes → Localización</em> y apagar “Utilizar Localización”</li></ul></li><li>Apagar Bluetooth, Wi-fi y el portador de radio telefónico activando modo de vuelo<ul><li>Deslice hacia abajo desdedese la parte superior de la pantalla del dispositivo. Puede haber un control deslizante para Modo de Vuelo (Suele verse como un avión). Asegúrese que el Modoque Modo de vuelo estéeste encendido.</li><li>Si usted no tiene el botón al bajar el panel de notificaciones, vaya a <em>Ajustes → Red e Internet</em> y encienda “Modo de Vuelo.”</li><li>Usted puede encender su data móvil sin dejar Modo de vuelo, si lo necesita. Presione el botón Data móvil en el panel de notificaciones después de activar el Modoactivar Modo de Vuelo. Esos dos botones se encuentran, frecuentemente, a la par.</li><li>Asegúrese que Bluetooth estéeste verdaderamente apagado. Android puedepuedo ser que lo mantenga encendido si los dispositivossi dispositivos de bluetooth están conectados. El botón en el panel de notificaciones debe ser gris/ sin color para indicar que estáesta apagado.</li></ul></li><li>Instalación de Pantalla de bloqueo<ul><li>Vaya a <em>Ajustes → Seguridad → Pantalla de Bloqueo</em> y seleccionar PIN o contraseña<ul><li>Se le dará la opción de decidir si quiere que las notificaciones sean mostradas en la pantalla en lo que su móvil estáesta bloqueado. La opción másmas segura es “Nunca”. Si eso no le funciona, escoja “ocultar notificaciones sensibles.”</li></ul></li><li>Toque el icono de ajustes para abrir el menú configuración:<ul><li>Ajustar “Tiempo de espera de la pantalla” a Bloquear inmediatamente.</li><li>Marque la opción “Bloquear con tecla encendido”</li></ul></li><li>Desactivar Smart Lock si lo tiene. Puede mantener su móvil desbloqueado cuando menos se lo espera, lo cual es peligroso durante una marcha.</li></ul></li><li>Vaya a <em>configuración → Pantalla y brillo → Avanzado → Bloqueo Automático</em> y escoja la opción más corta posible, normalmente 15 segundos.</li></ul></div></div><h1 id=ideas-de-seguridad>Ideas de Seguridad
+<a class=anchor href=#ideas-de-seguridad><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>Esta sección tratasección se trata de mantener su información privada en el resto de su vida. En
 este documento, “Privado” significa que algo es solamente accesible a usted y a nadie másmas sin su
-permiso.</p>
-<h2 id="mensajería-con-encriptación">
-  Mensajería con Encriptación
-  <a class="anchor" href="#mensajer%c3%ada-con-encriptaci%c3%b3n">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Para encriptar su comunicación personal (como mensajes con otras personas), usted quiere encriptado
+permiso.</p><h2 id=mensajería-con-encriptación>Mensajería con Encriptación
+<a class=anchor href=#mensajer%c3%ada-con-encriptaci%c3%b3n><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Para encriptar su comunicación personal (como mensajes con otras personas), usted quiere encriptado
 de punto a punto (E2EE). Muchas aplicaciones dicen tener “encriptación” pero solamente pocas
 garantizan que su información permanezca encriptada de su teléfono a el recipiente. El encriptado de
 punto a punto significa que es solamente legible por usted y su recipiente. Sin la propiedad “punto
 a punto”, las copias de mensajes serian enviadas y guardadas en un servidor central al que la
-empresa proveedora tendría acceso completo.</p>
-<h2 id="reunión-virtual">
-  Reunión Virtual
-  <a class="anchor" href="#reuni%c3%b3n-virtual">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Las reuniones virtuales por medio de videollamadas son parte de la vida moderna y muy común en
+empresa proveedora tendría acceso completo.</p><h2 id=reunión-virtual>Reunión Virtual
+<a class=anchor href=#reuni%c3%b3n-virtual><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Las reuniones virtuales por medio de videollamadas son parte de la vida moderna y muy común en
 comunidades activistas. Soluciones como Zoom, Google Meet y Microsoft Teams son opciones populares
 para el trabajo y reuniones sociales, pero no ofrecen la privacidad que el activismo requiere. Por
-esa razón, nosotros recomendamos <a href="https://jitsi.org/">Jitsi</a>. A diferencia de otras plataformas,
+esa razón, nosotros recomendamos <a href=https://jitsi.org/>Jitsi</a>. A diferencia de otras plataformas,
 Jitsi no mantiene registro o retiene el contenido de sus reuniones. Jitsi es gratis y no requiere
 una cuenta de usuario. Usted puede comenzar una reunión directamente desde la página web
-<a href="https://meet.jit.si/">meet.jit.si</a>. Los participantes no necesitan tener cuentas o dar información
+<a href=https://meet.jit.si/>meet.jit.si</a>. Los participantes no necesitan tener cuentas o dar información
 personal para poder usar esta plataforma. Jitsi toma en serio la seguridad y el anonimato personal.
-Puede leer más en su <a href="https://jitsi.org/security/">página de seguridad</a>.</p>
-<h2 id="protección-de-contraseña">
-  Protección de contraseña
-  <a class="anchor" href="#protecci%c3%b3n-de-contrase%c3%b1a">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>La contraseña es el mecanismo principal que se usa para asegurar sus cuentas en línea, pero también
-es un punto significante de vulnerabilidad. ¿Cómo podemos administrar esto?</p>
-<p>Encender la autenticación de dos factores (A2F) en todas partes donde se ofrece.
+Puede leer más en su <a href=https://jitsi.org/security/>página de seguridad</a>.</p><h2 id=protección-de-contraseña>Protección de contraseña
+<a class=anchor href=#protecci%c3%b3n-de-contrase%c3%b1a><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>La contraseña es el mecanismo principal que se usa para asegurar sus cuentas en línea, pero también
+es un punto significante de vulnerabilidad. ¿Cómo podemos administrar esto?</p><p>Encender la autenticación de dos factores (A2F) en todas partes donde se ofrece.
 Usar contraseñas largas y fuertes que no pueden ser fácilmente adivinadas.
 Use un administrador de contraseñas para almacenar sus contraseñas de manera segura. Después, use
-una contraseña única para cada dispositivo.</p>
-<h2 id="autenticación-de-dos-factores-a2f">
-  Autenticación de Dos Factores (A2F)
-  <a class="anchor" href="#autenticaci%c3%b3n-de-dos-factores-a2f">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Esto agrega una segunda verificación, cada vez que inicie una sesión, para verificar su identidad.
+una contraseña única para cada dispositivo.</p><h2 id=autenticación-de-dos-factores-a2f>Autenticación de Dos Factores (A2F)
+<a class=anchor href=#autenticaci%c3%b3n-de-dos-factores-a2f><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Esto agrega una segunda verificación, cada vez que inicie una sesión, para verificar su identidad.
 El segundo factor puede ser una aplicación en su móvil, un correo electrónico o un mensaje de texto.
 Se le envía un código de acceso de un solo uso, el cual entra en el servicio para comprobar que
 usted controla el segundo factor. No todos los medios de seguridad son iguales, pero <strong>cualquier A2F
-es mejor que ninguno.</strong></p>
-<p>Al elegir un método de A2F, una aplicación de verificación como Google Authenticator provee un buen
+es mejor que ninguno.</strong></p><p>Al elegir un método de A2F, una aplicación de verificación como Google Authenticator provee un buen
 balance entre conveniencia y seguridad. Google Authenticator es gratis y está disponible en la
-tienda de Google Play y Apple.</p>
-<p>Si desea una opción más segura, claves de seguridad como <a href="https://www.yubico.com/products/">Yubikey</a>
+tienda de Google Play y Apple.</p><p>Si desea una opción más segura, claves de seguridad como <a href=https://www.yubico.com/products/>Yubikey</a>
 pueden ser usadas. Las claves son objetosso objectos físicos que actúan como su segundo factor y
 también pueden ser usadas con el
-<a href="https://www.yubico.com/products/services-software/download/yubico-authenticator/">Yubico Authenticator</a>
-donde puede usar autentificadores físicos para generar códigos de acceso de un solo uso.</p>
-<p>Si las opciones anteriores no están disponibles para su servicio, usted podría usar su correo
+<a href=https://www.yubico.com/products/services-software/download/yubico-authenticator/>Yubico Authenticator</a>
+donde puede usar autentificadores físicos para generar códigos de acceso de un solo uso.</p><p>Si las opciones anteriores no están disponibles para su servicio, usted podría usar su correo
 electrónico o móvil (por medio de mensaje) para recibir su código de acceso de un solo uso. Estas
 opciones no son tan seguras como las opciones mencionadas previamente, pero, como tal se ha
-explicado másmas arriba, cualquier A2F es mejor que ninguno.</p>
-<h2 id="contraseñas-seguras">
-  Contraseñas Seguras
-  <a class="anchor" href="#contrase%c3%b1as-seguras">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Las contraseñas largas son más difíciles de adivinar sin importar las clases de caracteres que
+explicado másmas arriba, cualquier A2F es mejor que ninguno.</p><h2 id=contraseñas-seguras>Contraseñas Seguras
+<a class=anchor href=#contrase%c3%b1as-seguras><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Las contraseñas largas son más difíciles de adivinar sin importar las clases de caracteres que
 incluya. Las técnicas de los hackers modernos pueden intentar cualquier carácter posible en todas
 las maneras posibles en contraseñas de 8 caracteres instantáneamente, pero una contraseña de 10
 caracteres tomaría horas. XKCD hizo una explicación divertida sobre esto:
-<a href="https://xkcd.com/936/">https://xkcd.com/936/</a></p>
-<p><strong>Sus contraseñas deberían ser fácilfacial de recordar, pero largas para que nopara no se sea fácil a
+<a href=https://xkcd.com/936/>https://xkcd.com/936/</a></p><p><strong>Sus contraseñas deberían ser fácilfacial de recordar, pero largas para que nopara no se sea fácil a
 un hacker de adivinar.</strong> La mejor técnica en este momento es utilizar una frase de contraseña de
 varias palabras que son fácil de recordar, pero tan largas, que le tomaría siglos a un hacker para
 adivinar. Se puede usar una técnica que se llama Diceware que le propone diferentes frases de
 contraseñas fácil de recordar. Doug Muth construyó una buena herramienta de Diceware en línea, ver
-másmas abajo.</p>
-<p>Generador de contraseñas Diceware: <a href="https://diceware.dmuth.org/">https://diceware.dmuth.org/</a></p>
-<h2 id="administrador-de-contraseñas">
-  Administrador de contraseñas
-  <a class="anchor" href="#administrador-de-contrase%c3%b1as">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Los administradores de contraseñas son aplicaciones que funcionan como cajas fuertes para tus
+másmas abajo.</p><p>Generador de contraseñas Diceware: <a href=https://diceware.dmuth.org/>https://diceware.dmuth.org/</a></p><h2 id=administrador-de-contraseñas>Administrador de contraseñas
+<a class=anchor href=#administrador-de-contrase%c3%b1as><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Los administradores de contraseñas son aplicaciones que funcionan como cajas fuertes para tus
 contraseñas personales. Ellos guardan su nombre de usuario, contraseña y otros tipos de información
 para cada aplicación y otras páginaspaginas de web que usted visita. Esta caja fuerte está muy
 fuertemente encriptada y solamente puede ser abierta con una contraseña maestra. Todo lo que usted
@@ -864,228 +226,47 @@ ser expuesta a la comunidad de hackers (piratas informáticos), frecuentemente a
 electrónico. Es asombrosamente fácil que los hackers (piratas informáticos) traten de usar estas
 credenciales filtradas con otros servicios, incluyendo con las variaciones de su contraseña. Esta es
 la falla de seguridad más común en las cuentas de usuarios. Esta vulnerabilidad se neutraliza si la
-contraseña utilizada con el servicio pirateado es única.</p>
-<p>Con un administrador de contraseña, usted puede asignar para que cada servicio use una contraseña
+contraseña utilizada con el servicio pirateado es única.</p><p>Con un administrador de contraseña, usted puede asignar para que cada servicio use una contraseña
 totalmente inimaginable, única y generado aleatoriamente, por ejemplo <code>7Xg*2BMVxCo!Uy</code>. Los
 administradores de contraseñas, normalmente, incluyen un generador aleatorio para producir estas
 contraseñas y usted nunca tiene que recordarse de ellas porque se quedan seguramente guardadas
 dentro de su caja fuerte personal dentro del administrador. Nuestra recomendación es BitWarden, un
 administrador de contraseña de código abierto y fácil de usar que utiliza encriptaciones con
-estándares de amplio consenso para sus contraseñas.</p>
-<h2 id="preguntas-de-seguridad">
-  Preguntas de Seguridad
-  <a class="anchor" href="#preguntas-de-seguridad">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Normalmente diferentes servicios usan preguntas personales como sistema de respaldo por si
+estándares de amplio consenso para sus contraseñas.</p><h2 id=preguntas-de-seguridad>Preguntas de Seguridad
+<a class=anchor href=#preguntas-de-seguridad><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Normalmente diferentes servicios usan preguntas personales como sistema de respaldo por si
 necesitanecesite restablecer su contraseña. Estas preguntas frecuentemente piden información
 personal como el nombre de la mascota que tuvo en su niñez o el apellido de soltera de su mamá. Esta
-información, desafortunadamente, es accesible a otras personas.</p>
-<p>Cuando usted responda estas preguntas de seguridad, trate de <strong>usar palabras claves en vez de
+información, desafortunadamente, es accesible a otras personas.</p><p>Cuando usted responda estas preguntas de seguridad, trate de <strong>usar palabras claves en vez de
 responderlas honestamente</strong> para que nadie familiar pueda adivinar y cambiar la contraseña sin su
 consentimiento. Por ejemplo, para la pregunta “¿QuéQue escuela asistió en el sexto grado?” usted
-puede responder con su caricatura favorita en el sexto grado.</p>
-<h1 id="otras-recomendaciones">
-  Otras Recomendaciones
-  <a class="anchor" href="#otras-recomendaciones">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<ul>
-<li>¡Estas sugerencias no solamente lo protegen a usted, sinopero también protegen la seguridad y
-privacidad de otros!</li>
-<li>Piense cuidadosamente con quien puede compartir con toda seguridad su participación en el
-activismo.</li>
-<li>No utilice el correo electrónico para conversaciones de marcha.</li>
-<li>De vez en cuando busque su nombre en Google para ver lo que encuentra</li>
-<li>No ponga ninguna clase de información sobre alguna protesta o que usted estáesta asistiendo una en
+puede responder con su caricatura favorita en el sexto grado.</p><h1 id=otras-recomendaciones>Otras Recomendaciones
+<a class=anchor href=#otras-recomendaciones><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><ul><li>¡Estas sugerencias no solamente lo protegen a usted, sinopero también protegen la seguridad y
+privacidad de otros!</li><li>Piense cuidadosamente con quien puede compartir con toda seguridad su participación en el
+activismo.</li><li>No utilice el correo electrónico para conversaciones de marcha.</li><li>De vez en cuando busque su nombre en Google para ver lo que encuentra</li><li>No ponga ninguna clase de información sobre alguna protesta o que usted estáesta asistiendo una en
 Facebook o cualquier otro servicio. Usted no quiere dar evidenciadarle evidencia a ningún servicio
 de terceros de su participación. La policía utiliza citaciones para conseguir información sobre los
-usuarios en Facebook y otras empresas de redes sociales.</li>
-<li>No le tome fotos a nadie sin permiso</li>
-<li>Si usted toma fotos, no las ponga en las redes sociales. Estas imágenes contienen información
+usuarios en Facebook y otras empresas de redes sociales.</li><li>No le tome fotos a nadie sin permiso</li><li>Si usted toma fotos, no las ponga en las redes sociales. Estas imágenes contienen información
 secreta en ellas que incluye la hora y lugar de cuando fueron tomadas. Si envía una foto o video,
-solamente envié a personas de confianza, de manera segura, mucho después y lejos de la protesta.</li>
-<li>Asegúrese de tener un amigo(a) en la marcha y utiliceUtilice Signal para comunicarse con ellos.</li>
-<li>Cuanto utilice Signal, active “Desaparición de Mensajes” para cualquier conversación delicada</li>
-</ul>
-<h1 id="clausura">
-  Clausura
-  <a class="anchor" href="#clausura">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h1>
-<p>Esperamos que haya encontradoencontrada esta información de mucha ayuda. Aunque al principio esta
+solamente envié a personas de confianza, de manera segura, mucho después y lejos de la protesta.</li><li>Asegúrese de tener un amigo(a) en la marcha y utiliceUtilice Signal para comunicarse con ellos.</li><li>Cuanto utilice Signal, active “Desaparición de Mensajes” para cualquier conversación delicada</li></ul><h1 id=clausura>Clausura
+<a class=anchor href=#clausura><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h1><p>Esperamos que haya encontradoencontrada esta información de mucha ayuda. Aunque al principio esta
 información puede verse intimidante, esperamos que pueda dominarla en poco tiempo y con práctica. El
 mundo de la seguridad informática cambia a diario y rápidamente- Nosotros trataremos de mantener
 esta página al día y actualizada, pero esperamos que usted diversifique sus fuentes de información.
 Si le gustaría seguir aprendiendo, el podcast Lock and Code de Malwarebyte&rsquo;s tiene un episodio sobre
-porquéporque la privacidad de datos es importante que se llama  Why Data Privacy Day matters, y la
+porquéporque la privacidad de datos es importante que se llama Why Data Privacy Day matters, y la
 ACLU trata sobre las continuas amenazas de los derechos de los protestantes ongoing threats to
 protesters&rsquo; rights. ¡Para seguir las noticias del mundo de la privacidad y la libertad de expresión,
-¡visita los recursos abajo!</p>
-<ul>
-<li><a href="https://www.techdirt.com">Techdirt</a></li>
-<li><a href="https://www.wired.com/tag/privacy/page/1/">Wired: Privacy</a></li>
-<li><a href="https://arstechnica.com">Arstechnica</a></li>
-<li><a href="https://www.eff.org/deeplinks">EFF Deeplinks</a></li>
-</ul>
-<h2 id="reconocimientos">
-  Reconocimientos
-  <a class="anchor" href="#reconocimientos">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Blake, Drew, y Mark quieren agradecerles a Clare, Deb, Moe, Sasha, Stacy, y Vincent por su
+¡visita los recursos abajo!</p><ul><li><a href=https://www.techdirt.com>Techdirt</a></li><li><a href=https://www.wired.com/tag/privacy/page/1/>Wired: Privacy</a></li><li><a href=https://arstechnica.com>Arstechnica</a></li><li><a href=https://www.eff.org/deeplinks>EFF Deeplinks</a></li></ul><h2 id=reconocimientos>Reconocimientos
+<a class=anchor href=#reconocimientos><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Blake, Drew, y Mark quieren agradecerles a Clare, Deb, Moe, Sasha, Stacy, y Vincent por su
 asistencia con este proyecto. También le agradecemos a nuestras mascotas, Lacey, Lily, Pico, y Roxy
-por su apoyo en estos tiempos difíciles.</p>
-<h2 id="sobre-el-autor">
-  Sobre el Autor
-  <a class="anchor" href="#sobre-el-autor">
-    
-    
-    <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-    </svg>
-  </a>
-</h2>
-<p>Drew provee administración de proyectos y revisión lingüística para este medio. Cuando Drew no está
+por su apoyo en estos tiempos difíciles.</p><h2 id=sobre-el-autor>Sobre el Autor
+<a class=anchor href=#sobre-el-autor><svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path fill="var(--color-link)" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h2><p>Drew provee administración de proyectos y revisión lingüística para este medio. Cuando Drew no está
 enardeciendo a la multitud, le gusta pasear en bicicleta, hornear y leer.
 Mark es un profesor de informática y se enfoca en la enseñanza informática, la democratización de
 computación y en recursos de ciudadanía digital. Cuando no estáesta trabajando para atajar un Elíseo
-social, Mark disfruta de D&amp;D, monatr en bicicleta, manejar, cocinar y sus perros.
+social, Mark disfruta de D&D, monatr en bicicleta, manejar, cocinar y sus perros.
 Blake es el Principal Desarrollador Móvil, ofrece conocimientos técnicos y un amor malsano de puns y
 Git a este proyecto. Cuando no estáesta atormentando el idioma inglés Ingles, éel disfruta de
-cocinar, fermentar Kombucha, cerveza y aguamiel y pasar tiempo con su perro, Lacey.</p>
-<hr>
-<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdmvPAGVEVwe2ImXvjGoLQH2MZS34aoiveJRO8FnW4fE-1VEg/viewform?usp=sf_link">Envíenos sugerencias:</a>
-(Este enlace usa un formulario de Google. No ponga información personal.)</p>
-<p><img src="../media/GitHub-Mark-32px.png" alt="GitHub Logo" />
-¿Ve un error, o quiere ayudarnos mejorar este document? Contribuya al proyecto en <a href="https://github.com/InfosecForActivistsTeam/infosec-activists">Github</a></p>
-</article>
- 
-      
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;width:80px" src="media/by-nc-sa-80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Infosec 101 for Activists</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://infosecforactivists.org/" property="cc:attributionName" rel="cc:attributionURL">Drew Bjorn, Mark Sherman, Ph.D., and Blake Skinner</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#herramientos-para-usar">Herramientos para usar</a></li>
-    <li><a href="#herramientas-que-no-debe-usar">Herramientas que NO debe Usar</a></li>
-    <li><a href="#cosas-que-debe-saber">Cosas que Debe Saber</a></li>
-    <li><a href="#asistir-a-una-acción">Asistir a una acción</a>
-      <ul>
-        <li><a href="#antes">Antes</a></li>
-        <li><a href="#durante">Durante</a></li>
-        <li><a href="#después">Después</a></li>
-      </ul>
-    </li>
-    <li><a href="#preparando-su-teléfono">Preparando su teléfono</a>
-      <ul>
-        <li><a href="#migas-de-pan-digitales">Migas de Pan Digitales</a></li>
-        <li><a href="#protección-contra-intrusiones">Protección contra intrusiones</a></li>
-        <li><a href="#airdrop">AirDrop</a></li>
-        <li><a href="#copias-de-seguridad-del-teléfono">Copias de seguridad del teléfono</a></li>
-        <li><a href="#instrucciones-de-configuración-de-su-móvil">Instrucciones de configuración de su móvil</a></li>
-      </ul>
-    </li>
-    <li><a href="#ideas-de-seguridad">Ideas de Seguridad</a>
-      <ul>
-        <li><a href="#mensajería-con-encriptación">Mensajería con Encriptación</a></li>
-        <li><a href="#reunión-virtual">Reunión Virtual</a></li>
-        <li><a href="#protección-de-contraseña">Protección de contraseña</a></li>
-        <li><a href="#autenticación-de-dos-factores-a2f">Autenticación de Dos Factores (A2F)</a></li>
-        <li><a href="#contraseñas-seguras">Contraseñas Seguras</a></li>
-        <li><a href="#administrador-de-contraseñas">Administrador de contraseñas</a></li>
-        <li><a href="#preguntas-de-seguridad">Preguntas de Seguridad</a></li>
-      </ul>
-    </li>
-    <li><a href="#otras-recomendaciones">Otras Recomendaciones</a></li>
-    <li><a href="#clausura">Clausura</a>
-      <ul>
-        <li><a href="#reconocimientos">Reconocimientos</a></li>
-        <li><a href="#sobre-el-autor">Sobre el Autor</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+cocinar, fermentar Kombucha, cerveza y aguamiel y pasar tiempo con su perro, Lacey.</p><hr><p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdmvPAGVEVwe2ImXvjGoLQH2MZS34aoiveJRO8FnW4fE-1VEg/viewform?usp=sf_link">Envíenos sugerencias:</a>
+(Este enlace usa un formulario de Google. No ponga información personal.)</p><p><img src=../media/GitHub-Mark-32px.png alt="GitHub Logo">
+¿Ve un error, o quiere ayudarnos mejorar este document? Contribuya al proyecto en <a href=https://github.com/InfosecForActivistsTeam/infosec-activists>Github</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt="Creative Commons License" style=border-width:0;width:80px src=media/by-nc-sa-80x15.png></a><br><span xmlns:dct=http://purl.org/dc/terms/ href=http://purl.org/dc/dcmitype/Text property="dct:title" rel=dct:type>Infosec 101 for Activists</span> by <a xmlns:cc=http://creativecommons.org/ns# href=http://infosecforactivists.org/ property="cc:attributionName" rel=cc:attributionurl>Drew Bjorn, Mark Sherman, Ph.D., and Blake Skinner</a> is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#introducción>Introducción</a></li><li><a href=#herramientos-para-usar>Herramientos para usar</a></li><li><a href=#herramientas-que-no-debe-usar>Herramientas que NO debe Usar</a></li><li><a href=#cosas-que-debe-saber>Cosas que Debe Saber</a></li><li><a href=#asistir-a-una-acción>Asistir a una acción</a><ul><li><a href=#antes>Antes</a></li><li><a href=#durante>Durante</a></li><li><a href=#después>Después</a></li></ul></li><li><a href=#preparando-su-teléfono>Preparando su teléfono</a><ul><li><a href=#migas-de-pan-digitales>Migas de Pan Digitales</a></li><li><a href=#protección-contra-intrusiones>Protección contra intrusiones</a></li><li><a href=#airdrop>AirDrop</a></li><li><a href=#copias-de-seguridad-del-teléfono>Copias de seguridad del teléfono</a></li><li><a href=#instrucciones-de-configuración-de-su-móvil>Instrucciones de configuración de su móvil</a></li></ul></li><li><a href=#ideas-de-seguridad>Ideas de Seguridad</a><ul><li><a href=#mensajería-con-encriptación>Mensajería con Encriptación</a></li><li><a href=#reunión-virtual>Reunión Virtual</a></li><li><a href=#protección-de-contraseña>Protección de contraseña</a></li><li><a href=#autenticación-de-dos-factores-a2f>Autenticación de Dos Factores (A2F)</a></li><li><a href=#contraseñas-seguras>Contraseñas Seguras</a></li><li><a href=#administrador-de-contraseñas>Administrador de contraseñas</a></li><li><a href=#preguntas-de-seguridad>Preguntas de Seguridad</a></li></ul></li><li><a href=#otras-recomendaciones>Otras Recomendaciones</a></li><li><a href=#clausura>Clausura</a><ul><li><a href=#reconocimientos>Reconocimientos</a></li><li><a href=#sobre-el-autor>Sobre el Autor</a></li></ul></li></ul></nav></div></aside></main></body></html>
